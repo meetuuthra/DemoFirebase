@@ -89,9 +89,16 @@ public class Contacts extends AppCompatActivity {
                 for(DataSnapshot ds: dataSnapshot.getChildren()){
                     Users user = ds.getValue(Users.class);
                     users.add(user);
-                    //String firstname = (String)(dataSnapshot.child("fname").getValue());
-                   // Log.d("fname", (String) dataSnapshot.child("fname").getValue());
-                    //Log.d("firstname",firstname);
+                    //String user_id = mAuth.getCurrentUser().getUid();
+                    //String firstname = (String)(dataSnapshot.child("Users").child(user_id).child("fname").getValue());
+                   //Log.d("fname", (String) dataSnapshot.child("fname").getValue());
+                   // Log.d("firstname",firstname);
+                   // Log.d("fname", String.valueOf(ds.child("fname").getValue()));
+                    String fname = String.valueOf(ds.child("fname").getValue());
+                    String lname = String.valueOf(ds.child("lname").getValue());
+                    currentUser.setText(fname+" "+lname);
+
+
 
                 }
             }
