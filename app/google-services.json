@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "569600462088",
+    "firebase_url": "https://socialnetworkingapp-e16ad.firebaseio.com",
+    "project_id": "socialnetworkingapp-e16ad",
+    "storage_bucket": "socialnetworkingapp-e16ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569600462088:android:11f01675cb370b8d",
+        "android_client_info": {
+          "package_name": "com.example.meetuuthra.socialnetworkingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "569600462088-38uq7lt46vj3kffju03se3mjf6e5q08u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.meetuuthra.socialnetworkingapp",
+            "certificate_hash": "3a53eb34929931d5bc4c4433f84f5316bcd26ae6"
+          }
+        },
+        {
+          "client_id": "569600462088-79fc8qqrehs3e2eetua0t0ltkse5fp47.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr32l1sqr8LAFcSNknfreVgIRMggxvmoQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "569600462088-79fc8qqrehs3e2eetua0t0ltkse5fp47.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

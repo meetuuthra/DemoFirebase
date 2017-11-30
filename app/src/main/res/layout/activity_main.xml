@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.meetuuthra.socialnetworkingapp.MainActivity">
+
+    <EditText
+        android:id="@+id/eTUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/eTPassword"
+        android:layout_alignLeft="@+id/eTPassword"
+        android:layout_alignStart="@+id/eTPassword"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/eTPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/eTPassword"
+        android:layout_alignStart="@+id/eTPassword"
+        android:layout_below="@+id/eTPassword"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="24dp"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/status_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/loginButton"
+        android:layout_alignLeft="@+id/eTPassword"
+        android:layout_alignStart="@+id/eTPassword"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp">
+    </com.google.android.gms.common.SignInButton>
+    
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Out"
+        android:id="@+id/signOutButton"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/sign_in_button"
+        android:layout_toRightOf="@+id/status_textview"
+        android:layout_toEndOf="@+id/status_textview"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp" />
+
+    <TextView
+        android:id="@+id/tVSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/signOutButton"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@+id/sign_in_button"
+        android:text="SignUp"
+       />
+</RelativeLayout>
